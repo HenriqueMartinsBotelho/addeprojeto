@@ -1,0 +1,123 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+
+.main input {
+  width: 30%;
+  margin: 30px;
+  font-size: 1vw;
+  min-width: 300px;
+}
+
+.card {
+  width: 30%;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(46, 41, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 41, 119, 0.8743872549019608) 0%,
+    rgba(0, 0, 128, 0.865983893557423) 40%,
+    rgba(2, 199, 238, 1) 100%
+  );
+  margin-bottom: 20%;
+  min-height: 300px;
+  min-width: 300px;
+  color: white;
+}
+
+input {
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+input:hover {
+  box-shadow: 0 0 15px 5px #b0e0ee;
+  border: 2px solid #bebede;
+}
+
+/* Temperatura */
+.mat-card-title {
+  font-size: 5vw;
+}
+
+/* Cidade  */
+.city {
+  font-size: 2vw;
+}
+
+/* Descrição */
+.mat-card-content {
+  font-size: 2vw;
+}
+
+/**********  Para celular **************/
+
+@media screen and (max-width: 600px) {
+  .mat-card-title {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .city {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mat-card-content {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main input {
+    font-size: 4vw;
+  }
+}
+
+/**********  Para table **************/
+
+@media screen and (max-width: 1870px) {
+  .mat-card-title {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 1870px) {
+  .city {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 1870px) {
+  .mat-card-content {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 1870px) {
+  .main input {
+    font-size: 4vw;
+    width: 80%;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 1870px) {
+  .card {
+    width: 80%;
+  }
+}

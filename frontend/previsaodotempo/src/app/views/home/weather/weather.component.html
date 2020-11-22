@@ -1,0 +1,16 @@
+<div class="main" [style.background-image]="'url(' + backgroundImg + ')'">
+
+  <input type=" text" (change)="getCity($event.target.value)" placeholder="Digite o nome da cidade" />
+
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{weatherData.celsius}}°C </mat-card-title>
+    </mat-card-header>
+    <div class="city">{{weatherData.name}}</div>
+    <mat-card-content>
+      <p>
+        {{weatherData.climate}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
